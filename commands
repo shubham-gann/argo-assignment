@@ -2,6 +2,6 @@ The following command creates a new project myproject which can deploy applicati
 
 argocd proj create myproject -d https://kubernetes.default.svc,default -s https://github.com/shubham-gann/argo-assignment
 
-
+Resource for Project: https://argo-cd.readthedocs.io/en/stable/user-guide/projects/
 
 Resource for kustomize: https://kubebyexample.com/learning-paths/argo-cd/argo-cd-working-kustomize
