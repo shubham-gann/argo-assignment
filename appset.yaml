@@ -7,7 +7,7 @@ spec:
   - list:
       elements:
       - cluster: engineering-dev
-        url: http://35.223.1.94
+        url: https://kubernetes.default.svc
       # - cluster: engineering-prod
       #   url: https://2.4.6.8
       # - cluster: finance-preprod
