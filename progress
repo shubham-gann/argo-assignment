@@ -3,6 +3,7 @@ Create a new repo for managing argo files. ✅
 Create an argocd application architecture to deploy k8s manifest files for two clusters. (use application, applicationsets, projects) (at-least 8-10 sample apps should be deployed) ✅
 
 ⭐ deployment.yaml needs to be modified for 8-10 apps
+⭐ Complete with Two clusters
 
 Deploy a kustomize application to 2 different cluster as prod and stage with one base. ✅
 
