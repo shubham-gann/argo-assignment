@@ -16,7 +16,7 @@ spec:
     metadata:
       name: '{{cluster}}-guestbook'
     spec:
-      project: argo-project
+      project: myproject
       source:
         repoURL: https://github.com/argoproj/argo-cd.git
         targetRevision: HEAD
