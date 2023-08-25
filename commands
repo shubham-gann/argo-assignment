@@ -1,3 +1,7 @@
 The following command creates a new project myproject which can deploy applications to namespace mynamespace of cluster https://kubernetes.default.svc. The permitted Git source repository is set to the url
 
 argocd proj create myproject -d https://kubernetes.default.svc,default -s https://github.com/shubham-gann/argo-assignment
+
+
+
+Resource for kustomize: https://kubebyexample.com/learning-paths/argo-cd/argo-cd-working-kustomize
