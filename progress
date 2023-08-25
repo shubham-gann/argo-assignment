@@ -2,10 +2,14 @@ Create a new repo for managing argo files. ✅
 
 Create an argocd application architecture to deploy k8s manifest files for two clusters. (use application, applicationsets, projects) (at-least 8-10 sample apps should be deployed) 🔃
 
+⭐ deployment.yaml needs to be modified for 8-10 apps
+
 Deploy a kustomize application to 2 different cluster as prod and stage with one base. ✅
 
-All the sync should be automated. ✅ (while creating in argocd can be done)
+⭐ deployment.yaml can be modified for different apps, currently nginx
 
-Add git webhook which can trigger the sync as soon as any changes are pushed to repo.
+All the sync should be automated. ✅ (while creating in argocd can be done in the UI/cmd)
+
+⭐ Add git webhook which can trigger the sync as soon as any changes are pushed to repo.
 
 Should get flock msg for each step of sync Pre, post etc. ✅
