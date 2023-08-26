@@ -13,3 +13,12 @@ patches:
           namespace: prod
     target:
       kind: Application
+
+  - patch: |-
+      - op: add
+        path: /spec/destination
+        value:
+          server: https://34.93.114.1
+          namespace: prod
+    target:
+      kind: ApplicationSet

@@ -14,3 +14,11 @@ patches:
           namespace: dev
     target:
       kind: Application
+  - patch: |-
+      - op: add
+        path: /spec/destination
+        value:
+          server: "https://kubernetes.default.svc"
+          namespace: dev
+    target:
+      kind: ApplicationSet
