@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: default
+spec:
+  destination:
+    namespace: default
+    serverURL: ""
+  project: default
+  source:
+    path: app-set/base/applications/mysql
+    repoURL: https://github.com/climbablebug44/argo-assignment
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false

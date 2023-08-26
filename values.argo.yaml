@@ -6,5 +6,5 @@ server:
   configEnabled: true
   config:
     secret:
-      githubSecret: ""
+      githubSecret: "argo-hook-pass"
   admin.enabled: "true"

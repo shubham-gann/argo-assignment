@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bgdk-app
+  name: nginx-app
   namespace: default
 spec:
   destination:
-    namespace: bgdk
+    namespace: default
     serverURL: ""
   project: default
   source:
