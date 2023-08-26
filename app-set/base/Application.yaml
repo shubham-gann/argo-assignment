@@ -6,10 +6,11 @@ metadata:
 spec:
   destination:
     namespace: bgdk
+    serverURL: ""
   project: default
   source:
-    path: dev
-    repoURL: https://gitlab.com/jasmine.harit/argocd-app-config
+    path: app-set/base/applications/nginx
+    repoURL: https://github.com/climbablebug44/argo-assignment
     targetRevision: HEAD
   syncPolicy:
     automated:
