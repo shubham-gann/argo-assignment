@@ -2,6 +2,6 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - ./Application-nginx.yaml
-- ./Application-mysql.yaml
-- ./Application-redis.yaml
+- ./ApplicationSet-remote.yaml
+- ./ApplicationSet-local.yaml
 
