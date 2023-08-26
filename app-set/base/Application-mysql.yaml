@@ -12,6 +12,8 @@ spec:
     repoURL: https://github.com/climbablebug44/argo-assignment
     targetRevision: HEAD
   syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
     automated:
       prune: true
       selfHeal: false
