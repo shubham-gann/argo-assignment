@@ -1,0 +1,10 @@
+nameOverride: argo-cd
+server:
+  name: server
+  extraArgs:
+    - --insecure
+  configEnabled: true
+  config:
+    secret:
+      githubSecret: ""
+  admin.enabled: "true"
