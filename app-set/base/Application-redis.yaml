@@ -6,7 +6,6 @@ metadata:
 spec:
   destination:
     namespace: default
-    serverURL: ""
   project: default
   source:
     path: app-set/base/applications/redis

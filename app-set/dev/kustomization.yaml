@@ -7,10 +7,10 @@ resources:
 
 patches:
   - patch: |-
-      - op: replace
+      - op: add
         path: /spec/destination
         value:
-          serverURL: https://kubernetes.default.svc
+          serverURL: "https://kubernetes.default.svc"
           namespace: dev
     target:
       kind: Application

@@ -6,7 +6,7 @@ metadata:
 spec:
   destination:
     namespace: default
-    serverURL: ""
+    serverURL: https://kubernetes.default.svc
   project: default
   source:
     path: app-set/base/applications/mysql

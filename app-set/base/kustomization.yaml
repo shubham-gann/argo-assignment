@@ -5,12 +5,3 @@ resources:
 - ./Application-mysql.yaml
 - ./Application-redis.yaml
 
-patches:
-  - patch: |-
-      - op: replace
-        path: /spec/destination
-        value:
-          serverURL: https://kubernetes.default.svc
-          namespace: dev
-    target:
-      kind: Application
