@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx-app
+  namespace: default
+spec:
+  destination:
+    namespace: default
+  project: default
+  source:
+    path: app-set/base/applications/nginx
+    repoURL: https://github.com/climbablebug44/argo-assignment
+    targetRevision: HEAD
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      prune: true
+      selfHeal: false

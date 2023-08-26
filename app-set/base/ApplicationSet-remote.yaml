@@ -1,0 +1,38 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: multi-appset-remote
+spec:
+  generators:
+  - list:
+      elements:
+      # random git repos pulling from git
+      - name: example
+        repo: https://github.com/helm/examples
+        path: charts/hello-world
+
+      - name: guestbook
+        repo: https://github.com/argoproj/argocd-example-apps/tree/master
+        path: helm-guestbook
+
+      - name: bitnami
+        repo: https://github.com/bitnami/charts
+        path: bitnami/haproxy
+
+  template:
+    metadata:
+      name: '{{name}}-app'
+    spec:
+      project: default
+      source:
+        repoURL: '{{repo}}'
+        targetRevision: HEAD
+        path: '{{path}}'
+        # create two folders with cluster name prod and dev. this generator will use them
+      destination:
+        server: ""
+        namespace: default
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
