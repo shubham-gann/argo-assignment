@@ -18,7 +18,7 @@ spec:
     spec:
       project: default
       source:
-        repoURL: https://github.com/climbablebug44/argo-assignment
+        repoURL: https://github.com/shubham-gann/argo-assignment.git
         targetRevision: HEAD
         path: app-set/{{cluster}}
         # create two folders with cluster name prod and dev. this generator will use them
