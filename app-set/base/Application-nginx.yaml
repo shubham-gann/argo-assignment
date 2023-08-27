@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     path: app-set/base/applications/nginx
-    repoURL: https://github.com/climbablebug44/argo-assignment
+    repoURL: https://github.com/shubham-gann/argo-assignment.git
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
